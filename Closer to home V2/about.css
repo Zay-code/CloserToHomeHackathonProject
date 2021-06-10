@@ -1,0 +1,46 @@
+.aboutHeading{
+    color: #05B5B5;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.aboutText{
+    font-weight: bolder ;
+    text-align: center;
+    font-size: 18px;
+    color: #657c94;
+    
+}
+
+.aboutT{
+    margin-top: 1rem;
+    color: #05B5B5;
+    font-weight: bold;
+
+}
+.aboutT2{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #657c94;
+}
+
+.heroImg{
+    margin-top: 10px;
+}
+
+#partners{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.client-wrap{
+    width: 90%;
+    height: auto;
+}
+
+
+
+
