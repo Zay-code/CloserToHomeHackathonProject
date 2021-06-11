@@ -1,0 +1,26 @@
+.images {
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav-bar{
+background: cadetblue;
+padding-top: 30px;
+padding-bottom: 50px;
+text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  color: cadetblue;
+
+}
+
+
