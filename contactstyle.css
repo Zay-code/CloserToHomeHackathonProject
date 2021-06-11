@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(cpt.jpg) no-repeat;
+    background: url(/imagescpt.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
