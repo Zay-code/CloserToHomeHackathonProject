@@ -1,0 +1,44 @@
+.nav-item{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+
+}
+.navbar{
+  padding: .8rem;
+  ; 
+}
+
+
+
+.images {
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav-bar{
+background: #04C4D9;
+padding-top: 30px;
+padding-bottom: 50px;
+text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  color: cadetblue;
+
+}
+
+.button{
+  text-align: center;
+}
+
