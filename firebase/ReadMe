@@ -1,0 +1,15 @@
+We are using firestore to host the database
+App was created on firebase, gave it a name
+We get a variable for configuration as a json object.
+Add latest libraries to use firebase features
+(We are done setting up firebase)
+
+create variable to call databse
+Use this variable with the name of the database to access databse
+(Accessing databse)
+
+we use a where method to select which data to retrieve,it takes in 3 arguments 1the field 2The condition 3the value we want
+use a get method
+then use a function with a forEach statement to run through all docs with the value we want
+we get a replica of the data using a snapshot
+(Query
