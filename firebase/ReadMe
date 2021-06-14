@@ -12,4 +12,4 @@ we use a where method to select which data to retrieve,it takes in 3 arguments 1
 use a get method
 then use a function with a forEach statement to run through all docs with the value we want
 we get a replica of the data using a snapshot
-(Query
+(Making Query)
