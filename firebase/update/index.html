@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <!--Loads up everything to do with firebase-->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <!--Loadds up firestore-->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Closer to Home</h1>
+
+        <div class="content">
+
+            <form id="addPlace">
+                <input type="text" name="placeName" id="area-group">
+                <button id="queryGroup">Group size</button>               
+            </form>
+            
+            <form id = "filter-city">   
+             <input type="text" name="activityname" id="area-name">
+            <button id="queryArea" >Show area</button>
+            </form>
+            
+            <form id = "filter-price">   
+                <input type="text" name="activityname" id="activity-price">
+               <button id="queryPrice" >Show Price</button>
+            </form>
+            
+
+            <ul id="place-list"></ul>
+
+        </div>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBm1b97PDOE39NPd1R8TpoDXy42DJrfEYo",
+    authDomain: "da-ting-aae6d.firebaseapp.com",
+    projectId: "da-ting-aae6d",
+    storageBucket: "da-ting-aae6d.appspot.com",
+    messagingSenderId: "365645988",
+    appId: "1:365645988:web:cdaeca8e84fc40151fd631",
+    measurementId: "G-B45C84EWEC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  const db = firebase.firestore();
+  db.settings({timestampsInSnapshots:true});
+  //database stored here ^
+</script>
+        <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
