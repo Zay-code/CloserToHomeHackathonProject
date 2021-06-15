@@ -1,0 +1,5 @@
+use event listener to listen for onclick event to query data
+e.preventDefault stops site from refreshing
+
+Jquery used to clear list to keep from adding in same query
+renderTable used to render the data of the document to the HTML using snapshot
