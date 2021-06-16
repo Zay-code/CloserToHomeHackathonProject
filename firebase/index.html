@@ -10,23 +10,48 @@
     </head>
     <body>
 
-        <h1>Cloud Cafe</h1>
+        <h1>Closer to Home</h1>
 
         <div class="content">
-
+                   
             <form id="addPlace">
-                <input type="text" name="placeName" >
-                <button>Find activities</button>
-                
+                <input list="group-size" name="group-size" id="area-group">
+                <datalist id="group-size">
+                    <option value="2">
+                    <option value="4">
+                    <option value="8">
+                    <option value="12">
+                    <option value="12+">
+                </datalist>
+             <!--   <input type="text" name="placeName" id="area-group"> -->
+                <button id="queryGroup">Max Group size</button>               
             </form>
-         <form id = "filter-city">   
-            <button id="queryArea">Show area</button>
-            </form> 
+            
+            <form id = "filter-city">   
+                <input list="area-name" name="area-name" id="st">
+                    <datalist id="area-name">
+                    <option value="stellenbosch">
+                    <option value="cape town">
+                    <option value="hout bay">
+                    <option value="belville">
+                    <option value="sea point">
+                    </datalist> 
+           <!--  <input type="text" name="activityname" id="area-name"> -->
+            <button id="queryArea" >Show area</button>
+            </form>
+            
+            <form id = "filter-price">   
+
+                <input type="text" id="activity-price" placeholder="enter amount">
+                
+            <!--<input type="text" name="activityname" id="activity-price">-->
+               <button id="queryPrice" >Show Price</button>
+            </form>
+            
+
             <ul id="place-list"></ul>
 
         </div>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -53,6 +78,6 @@
   //database stored here ^
 </script>
         <script src="app.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
 </html>
