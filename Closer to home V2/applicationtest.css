@@ -115,3 +115,15 @@ body{
     }
 
 }
+
+.box{
+    padding: 40px;
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    text-align: center;
+}
+
+P{
+    color: cadetblue;
+}

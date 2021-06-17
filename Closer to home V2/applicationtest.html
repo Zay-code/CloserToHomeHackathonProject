@@ -42,10 +42,17 @@
         </div>
     </nav>
     <body>
+<br><br>
+        <div class="box">
+            <h2>Interested In Applying As A Tourist For Closer To Home?</h2>
+            <p>
+                We as an organisation want to support South Africa's unemployment rate by giving you an opportunity to become a tourist with us!
+            </p>
+        </div>
         <section id="display">
             <div class="contactForm" >
                 <form action="https://sheetdb.io/api/v1/d5io5rc2142gq" method="POST" id="sheetdb-form" href="actionpage_php">
-                    <h2 style="font-weight: bolder; color: 023859;">Send Us A Message</h2>
+                    <h2 style="font-weight: bolder; color: 023859;">Fill In The Form</h2>
                     <div class="inputBox">
                         <input type="text" name="data[name]" required="required" onchange="updateMessage(name, value)">
                         <span class="nameDisplay">Full Name</span>
@@ -68,8 +75,11 @@
                     </div>
                     <div class="inputBox">
                         <textarea required="required" name="data[message]" onchange="updateMessage(name, value)"></textarea>
-                        <span>Type your message</span>
+                        <span>Message Of Motivation</span>
                     </div>
+                    <p>
+                        Please send CV to closertohome01@gmail.com
+                    </p>
                     <div class="inputBox">
                         <input type="submit" name="" value="Send" onclick="sendEmail()" style="border-radius: 25px;">
                     </div>
@@ -81,47 +91,10 @@
             </div>
         </section>
             
-        <script>
-            var form = document.getElementById('sheetdb-form');
-            form.addEventListener("submit", e => {
-              e.preventDefault();
-              fetch(form.action, {
-                  method : "POST",
-                  body: new FormData(document.getElementById("sheetdb-form")),
-              }).then(
-                  response => response.json()
-              ).then((html) => {
-                alert('Message has been successfully sent!')
-              });
-            });
+        <script src="application.js">
           </script>
           <script src="https://smtpjs.com/v3/smtp.js">
           </script>
-        
-        <script>
-        
-            let a = {
-        
-            }
-            function updateMessage(key, value){
-        
-                a[key] = value;
-        
-            }
-            function sendEmail(){
-                Email.send({
-                    Host: "smtp.gmail.com",
-                    Username:"zaynab.hartley@younglings.africa",
-                    Password:"Password1",
-                    To: 'closertohome01@gmail.com',
-                    From: `Email: ${a["data[email]"]}`,
-                    Subject: "New Email",
-                    Body: `Name: ${a["data[name]"]} <br>Email: ${a["data[email]"]} <br>Contact Number: ${a["data[number]"]} <br>Address: ${a["data[address]"]} <br>Date Of Birth: ${a["data[dob]"]} <br>Message: ${a["data[message]"]} <br>`
-    }).then(
-        message=> alert(message)
-    );
-            }
-        </script>
     </body>
 </html>
 <!-- https://docs.google.com/spreadsheets/d/1KRVQzixSUhqOFXKQnEUhse5FwIac2ikce18LxvzOxTA/edit#gid=0 -->
