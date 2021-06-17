@@ -10,30 +10,44 @@
     </head>
     <body>
 
-        <h1>Closer to Home</h1>
+        <h1>Even Closer to Home</h1>
 
         <div class="content">
-
+            <a href="/index.html">RETURN TO HOMEPAGE</a>
+                   
+<br><br><br>
             <form id="addPlace">
-                <input type="text" name="placeName" id="area-group">
-                <button id="queryGroup">Group size</button>               
+                <input type="text" name="group-size" id="area-group" placeholder="enter amount">
+            
+             <!--   <input type="text" name="placeName" id="area-group"> -->
+                <button id="queryGroup">Max Group size</button>               
             </form>
             
             <form id = "filter-city">   
-             <input type="text" name="activityname" id="area-name">
+                <input list="area-name" name="area-name" id="st" placeholder="select area">
+                    <datalist id="area-name">
+                    <option value="stellenbosch">
+                    <option value="cape town">
+                    <option value="hout bay">
+                    <option value="belville">
+                    <option value="sea point">
+                    </datalist> 
+           <!--  <input type="text" name="activityname" id="area-name"> -->
             <button id="queryArea" >Show area</button>
             </form>
             
             <form id = "filter-price">   
-                <input type="text" name="activityname" id="activity-price">
-               <button id="queryPrice" >Show Price</button>
+
+                <input type="text" id="activity-price" placeholder="enter amount">
+                
+            <!--<input type="text" name="activityname" id="activity-price">-->
+               <button id="queryPrice" >Max group Price</button>
             </form>
             
 
             <ul id="place-list"></ul>
 
         </div>
-
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
