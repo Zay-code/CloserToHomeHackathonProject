@@ -40,8 +40,8 @@ filterCity.addEventListener('click',(e) =>{
 filterPrice.addEventListener('click',(e) =>{
     $('ul').empty().then
     var placePrice = document.getElementById("activity-price").value;
-    parseInt(placePrice); 
-    db.collection("Places").where("price", "<=",parseInt(placePrice) )
+    e.preventDefault();
+    db.collection("Places").where("price", "<=",parseInt(placePrice))
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
